@@ -2,12 +2,13 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
     background-color: #000;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    touch-action: none; /* Prevent touch scrolling on mobile */
 }
 
 /* Welcome Section */
@@ -22,7 +23,6 @@ body, html {
     z-index: 2;
     color: white;
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
-    
 }
 
 /* Main Title */
@@ -38,7 +38,7 @@ body, html {
 .tagline {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff; /* Bright Pink */
+    color: #fff;
     margin-top: 10px;
     padding: 10px;
 }
@@ -68,8 +68,8 @@ body, html {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 3;
 }
 
@@ -94,13 +94,13 @@ body, html {
 /* Happy Holi Text */
 .holi-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 8rem; /* Increased font size */
+    font-size: 8rem;
     color: #fff;
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
-    font-weight: 900; /* Extra bold for impact */
-    letter-spacing: 8px; /* Slightly more spacing for a grand effect */
-    line-height: 1.2; /* Adjust line spacing */
+    font-weight: 900;
+    letter-spacing: 8px;
+    line-height: 1.2;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -109,7 +109,6 @@ body, html {
     0% { opacity: 0; transform: translateY(10px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-
 
 /* Random Color Splashes */
 .splash {
@@ -128,8 +127,6 @@ body, html {
     100% { transform: scale(2.5); opacity: 0; }
 }
 
-
-
 /* Logo Styling */
 .logo-container {
     position: fixed;
@@ -139,33 +136,32 @@ body, html {
 }
 
 .logo-container img {
-    width: 150px; /* Adjust size */
+    width: 150px;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
 .logo-container img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
-
 
 @media screen and (max-width: 550px) {
     .main-title {
-        font-size: 3rem; /* Reduced for smaller screens */
+        font-size: 3rem;
     }
 
     .tagline {
         margin-top: 10px;
-        font-size: 1.3rem; /* Slightly smaller tagline */
+        font-size: 1.3rem;
     }
 
     .holi-text {
-        font-size: 5rem; /* Reduced for better fit */
-        letter-spacing: 5px; /* Adjusted spacing */
+        font-size: 5rem;
+        letter-spacing: 5px;
     }
 
     #celebrate-btn {
-        font-size: 1.2rem; /* Slightly smaller button */
-        padding: 12px 25px; /* Adjusted padding */
+        font-size: 1.2rem;
+        padding: 12px 25px;
     }
 }

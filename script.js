@@ -4,7 +4,7 @@ const videoSection = document.getElementById("video-section");
 const splashContainer = document.getElementById("splash-container");
 
 // Splash Images
-const splashImages = ["blue.png", "yellow.png", "red.png", "green.png", "multi.png", "multi2.png","splash.png"];
+const splashImages = ["blue.png", "yellow.png", "red.png", "green.png", "multi.png", "multi2.png", "splash.png"];
 
 // Create audio element
 const holiSong = new Audio("music.mp3");
